@@ -60,11 +60,11 @@ public class EmployeeJPATest {
     }
 
     //5.查找xiaohong的所在公司的名称
-    @Test
-    public void test5(){
-        String xiaohong = employeeRepository.findCompayNameByEmployeeName("xiaohong");
-        System.out.println(xiaohong);
-    }
+//    @Test
+//    public void test5(){
+//        String xiaohong = employeeRepository.findCompayNameByEmployeeName("xiaohong");
+//        System.out.println(xiaohong);
+//    }
 
 
 }

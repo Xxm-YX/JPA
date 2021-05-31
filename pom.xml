@@ -65,10 +65,10 @@
 			<scope>runtime</scope>
 		</dependency>
 
-		<!--JTA组件核心依赖-->
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-jta-atomikos</artifactId>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.3</version>
 		</dependency>
 
 
