@@ -15,7 +15,7 @@ public class Controller {
     @Autowired
     private UserDao userDao;
 
-    @GetMapping("{id}")
+    @GetMapping("/hello/{id}")
     public UserDO hello(@PathVariable("id") Long id){
         return userDao.getById(id);
     }

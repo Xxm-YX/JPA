@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 9090
   servlet:
     path: /
 
@@ -21,7 +21,7 @@ spring:
   datasource:
     platform: postgres
 #    url: jdbc:postgresql://10.0.2.15:5432/spring_boot?useSSL=false
-    url: jdbc:postgresql://postgre:5432/spring_boot?useSSL=false
+    url: jdbc:postgresql://localhost:5432/spring_boot?useSSL=false
     username: postgres
     password: root
     driverClassName: org.postgresql.Driver
@@ -49,4 +49,4 @@ spring:
             use_jdbc_metadata_defaults: false
     database-platform: org.hibernate.dialect.PostgreSQL9Dialect
     hibernate:
-          ddl-auto: create
+          ddl-auto: update

@@ -65,22 +65,22 @@ public class UserDOTest {
 //        userDao.deleteById(5L);
 //    }
 
-    @Test
-    public void testLocate(){
-        Optional<UserDO> userDOOptional = userDao.findById(1L);
-        if(userDOOptional.isPresent()){
-            UserDO userDO = userDOOptional.get();
-            System.out.println("name = " + userDO.getName());
-            System.out.println("account = " + userDO.getAccount());
-        }
-    }
-
-    @Test
-    public void testFindAll(){
-        List<UserDO> userDOList = userDao.findAll(Sort.by(Sort.Direction.DESC,"account"));//降序
-        for (UserDO userDO : userDOList) {
-            System.out.println("name = " + userDO.getName());
-            System.out.println("account = " + userDO.getAccount());
-        }
-    }
+//    @Test
+//    public void testLocate(){
+//        Optional<UserDO> userDOOptional = userDao.findById(1L);
+//        if(userDOOptional.isPresent()){
+//            UserDO userDO = userDOOptional.get();
+//            System.out.println("name = " + userDO.getName());
+//            System.out.println("account = " + userDO.getAccount());
+//        }
+//    }
+//
+//    @Test
+//    public void testFindAll(){
+//        List<UserDO> userDOList = userDao.findAll(Sort.by(Sort.Direction.DESC,"account"));//降序
+//        for (UserDO userDO : userDOList) {
+//            System.out.println("name = " + userDO.getName());
+//            System.out.println("account = " + userDO.getAccount());
+//        }
+//    }
 }
