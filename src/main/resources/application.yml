@@ -1,5 +1,4 @@
 server:
-<<<<<<< HEAD
   port: 9090
   servlet:
     path: /
@@ -22,7 +21,7 @@ spring:
   datasource:
     platform: postgres
 #    url: jdbc:postgresql://10.0.2.15:5432/spring_boot?useSSL=false
-    url: jdbc:postgresql://localhost:5432/spring_boot?useSSL=false
+    url: jdbc:postgresql://mypostgre:5432/spring_boot?useSSL=false
     username: postgres
     password: root
     driverClassName: org.postgresql.Driver
@@ -51,33 +50,3 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQL9Dialect
     hibernate:
           ddl-auto: update
-=======
-  port: 8090
-  servlet:
-    path: /
-
-spring:
-  jta:
-    transaction-manager-id: jtaManager
-  datasource:
-    driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/spring_boot?charset=utf8mb4&useSSL=false
-    username: postgres
-    password: root
-
-    hikari:
-      maximum-pool-size: 20
-      minimum-idle: 5
-  jpa:
-    show-sql: true
-    database: postgresql
-    hibernate:
-      ddl-auto: update
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQL9Dialect
-        temp:
-          use_jdbc_metadata_defaults: false
-
-
->>>>>>> 353fef10f318a5a1b2e313f7cd486c48239c2e1a

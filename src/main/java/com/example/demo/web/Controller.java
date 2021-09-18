@@ -5,7 +5,12 @@ import com.example.demo.domain.UserDO;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @Slf4j
 @RestController
@@ -19,4 +24,11 @@ public class Controller {
     public UserDO hello(@PathVariable("id") Long id){
         return userDao.getById(id);
     }
+
+    @GetMapping("/aaa")
+    public Page<UserDO> h(){
+        return userDao.findAll(PageRequest.of(0,2));
+    }
+
+
 }
